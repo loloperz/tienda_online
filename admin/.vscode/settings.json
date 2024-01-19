@@ -1,0 +1,15 @@
+{
+    "liveServer.settings.port": 5501,
+    "eslint.codeActtionsOnSave.rules": null,
+    "editor.codeActionsOnSave":{
+        "source.fixAll.eslint": "explicit"
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "vue",
+        "svelte",
+    ],
+}
