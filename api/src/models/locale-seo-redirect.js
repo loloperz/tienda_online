@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = function (sequelize, DataTypes) {
   const LocaleSeoRedirect = sequelize.define('LocaleSeoRedirect', {
@@ -61,11 +61,11 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   LocaleSeoRedirect.associate = function (models) {
-    LocaleSeoRedirect.belongsTo(models.LocaleSeo, { foreignKey: 'localeSeoId' });
-  };
+    LocaleSeoRedirect.belongsTo(models.LocaleSeo, { foreignKey: 'localeSeoId' })
+  }
 
-  return LocaleSeoRedirect;
-};
+  return LocaleSeoRedirect
+}

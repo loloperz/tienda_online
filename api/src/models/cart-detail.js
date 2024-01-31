@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = function (sequelize, DataTypes) {
   const CartDetail = sequelize.define('CartDetail', {
@@ -107,16 +107,16 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   CartDetail.associate = function (models) {
-    CartDetail.belongsTo(models.Cart, { foreignKey: 'cartId' });
-    CartDetail.belongsTo(models.Product, { foreignKey: 'productId' });
-    CartDetail.belongsTo(models.Locale, { foreignKey: 'localeId' });
-    CartDetail.belongsTo(models.Price, { foreignKey: 'priceId' });
-    CartDetail.belongsTo(models.PriceDiscount, { foreignKey: 'priceDiscountId' });
-    CartDetail.belongsTo(models.Tax, { foreignKey: 'taxId' });
-  };
+    CartDetail.belongsTo(models.Cart, { foreignKey: 'cartId' })
+    CartDetail.belongsTo(models.Product, { foreignKey: 'productId' })
+    CartDetail.belongsTo(models.Locale, { foreignKey: 'localeId' })
+    CartDetail.belongsTo(models.Price, { foreignKey: 'priceId' })
+    CartDetail.belongsTo(models.PriceDiscount, { foreignKey: 'priceDiscountId' })
+    CartDetail.belongsTo(models.Tax, { foreignKey: 'taxId' })
+  }
 
-  return CartDetail;
-};
+  return CartDetail
+}

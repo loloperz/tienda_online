@@ -55,11 +55,11 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   Coupon.associate = function (models) {
 
-  };
+  }
 
-  return Coupon;
-};
+  return Coupon
+}

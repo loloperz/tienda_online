@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = function (sequelize, DataTypes) {
   const SaleError = sequelize.define('SaleError', {
@@ -74,13 +74,13 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   SaleError.associate = function (models) {
-    SaleError.belongsTo(models.PaymentMethod, { foreignKey: 'paymentMethodId' });
-    SaleError.belongsTo(models.Customer, { foreignKey: 'customerId' });
-    SaleError.belongsTo(models.Cart, { foreignKey: 'cartId' });
-  };
+    SaleError.belongsTo(models.PaymentMethod, { foreignKey: 'paymentMethodId' })
+    SaleError.belongsTo(models.Customer, { foreignKey: 'customerId' })
+    SaleError.belongsTo(models.Cart, { foreignKey: 'cartId' })
+  }
 
-  return SaleError;
-};
+  return SaleError
+}

@@ -54,11 +54,11 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   ImageConfiguration.associate = function (models) {
 
-  };
+  }
 
-  return ImageConfiguration;
-};
+  return ImageConfiguration
+}

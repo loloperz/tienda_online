@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = function (sequelize, DataTypes) {
   const LocaleSeo = sequelize.define('LocaleSeo', {
@@ -67,7 +67,7 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
-  return LocaleSeo;
-};
+  return LocaleSeo
+}

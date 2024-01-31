@@ -45,11 +45,11 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   PaymentMethod.associate = function (models) {
 
-  };
+  }
 
-  return PaymentMethod;
-};
+  return PaymentMethod
+}

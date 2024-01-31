@@ -87,12 +87,12 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   Fingerprint.associate = function (models) {
-    Fingerprint.belongsTo(models.Customer, { foreignKey: 'customerId', as: 'customer' });
-    Fingerprint.belongsTo(models.City, { foreignKey: 'cityId', as: 'city' });
-  };
+    Fingerprint.belongsTo(models.Customer, { foreignKey: 'customerId', as: 'customer' })
+    Fingerprint.belongsTo(models.City, { foreignKey: 'cityId', as: 'city' })
+  }
 
-  return Fingerprint;
-};
+  return Fingerprint
+}

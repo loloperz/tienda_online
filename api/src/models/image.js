@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = function (sequelize, DataTypes) {
   const Image = sequelize.define('Image', {
@@ -88,11 +88,11 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   Image.associate = function (models) {
-    Image.belongsTo(models.ImageConfiguration, { foreignKey: 'imageConfigurationId' });
-  };
+    Image.belongsTo(models.ImageConfiguration, { foreignKey: 'imageConfigurationId' })
+  }
 
-  return Image;
-};
+  return Image
+}

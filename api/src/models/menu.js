@@ -36,11 +36,11 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   Menu.associate = function (models) {
 
-  };
+  }
 
-  return Menu;
-};
+  return Menu
+}

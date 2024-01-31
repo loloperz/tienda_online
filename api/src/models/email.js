@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = function (sequelize, DataTypes) {
   const Email = sequelize.define('Email', {
@@ -42,7 +42,7 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
-  return Email;
-};
+  return Email
+}

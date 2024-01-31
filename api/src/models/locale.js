@@ -56,11 +56,11 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   Locale.associate = function (models) {
 
-  };
+  }
 
-  return Locale;
-};
+  return Locale
+}

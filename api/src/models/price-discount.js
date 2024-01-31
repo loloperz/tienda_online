@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = function (sequelize, DataTypes) {
   const PriceDiscount = sequelize.define('PriceDiscount', {
@@ -60,11 +60,11 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   PriceDiscount.associate = function (models) {
-    PriceDiscount.belongsTo(models.Price, { foreignKey: 'priceId' });
-  };
+    PriceDiscount.belongsTo(models.Price, { foreignKey: 'priceId' })
+  }
 
-  return PriceDiscount;
-};
+  return PriceDiscount
+}

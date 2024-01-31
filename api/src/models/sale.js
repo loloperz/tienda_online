@@ -100,14 +100,14 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   Sale.associate = function (models) {
-    Sale.belongsTo(models.Cart, { foreignKey: 'cartId' });
-    Sale.belongsTo(models.Customer, { foreignKey: 'customerId' });
-    Sale.belongsTo(models.PaymentMethod, { foreignKey: 'paymentMethodId' });
-    Sale.belongsTo(models.Coupon, { foreignKey: 'couponId' });
-  };
+    Sale.belongsTo(models.Cart, { foreignKey: 'cartId' })
+    Sale.belongsTo(models.Customer, { foreignKey: 'customerId' })
+    Sale.belongsTo(models.PaymentMethod, { foreignKey: 'paymentMethodId' })
+    Sale.belongsTo(models.Coupon, { foreignKey: 'couponId' })
+  }
 
-  return Sale;
-};
+  return Sale
+}

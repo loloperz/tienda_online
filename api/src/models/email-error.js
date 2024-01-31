@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = function (sequelize, DataTypes) {
   const EmailError = sequelize.define('EmailError', {
@@ -60,12 +60,12 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   EmailError.associate = function (models) {
-    EmailError.belongsTo(models.Customer, { foreignKey: 'customerId' });
-    EmailError.belongsTo(models.Email, { foreignKey: 'emailId' });
-  };
+    EmailError.belongsTo(models.Customer, { foreignKey: 'customerId' })
+    EmailError.belongsTo(models.Email, { foreignKey: 'emailId' })
+  }
 
-  return EmailError;
-};
+  return EmailError
+}

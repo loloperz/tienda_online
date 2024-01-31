@@ -41,11 +41,11 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   Language.associate = function (models) {
 
-  };
+  }
 
-  return Language;
-};
+  return Language
+}

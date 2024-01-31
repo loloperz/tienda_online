@@ -108,14 +108,14 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   PageTracking.associate = function (models) {
-    PageTracking.belongsTo(models.Customer, { foreignKey: 'customerId', as: 'customer' });
-    PageTracking.belongsTo(models.Fingerprint, { foreignKey: 'fingerprintId', as: 'fingerprint' });
-    PageTracking.belongsTo(models.LocaleSeo, { foreignKey: 'localeSeoId', as: 'localeSeo' });
-    PageTracking.belongsTo(models.LocaleSeoSlug, { foreignKey: 'localeSeoSlugId', as: 'localeSeoSlug' });
-  };
+    PageTracking.belongsTo(models.Customer, { foreignKey: 'customerId', as: 'customer' })
+    PageTracking.belongsTo(models.Fingerprint, { foreignKey: 'fingerprintId', as: 'fingerprint' })
+    PageTracking.belongsTo(models.LocaleSeo, { foreignKey: 'localeSeoId', as: 'localeSeo' })
+    PageTracking.belongsTo(models.LocaleSeoSlug, { foreignKey: 'localeSeoSlugId', as: 'localeSeoSlug' })
+  }
 
-  return PageTracking;
-};
+  return PageTracking
+}

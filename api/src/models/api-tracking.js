@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = function (sequelize, DataTypes) {
   const ApiTracking = sequelize.define('ApiTracking', {
@@ -96,12 +96,12 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   ApiTracking.associate = function (models) {
-    ApiTracking.belongsTo(models.Customer, { foreignKey: 'customerId' });
-    ApiTracking.belongsTo(models.Fingerprint, { foreignKey: 'fingerprintId' });
-  };
+    ApiTracking.belongsTo(models.Customer, { foreignKey: 'customerId' })
+    ApiTracking.belongsTo(models.Fingerprint, { foreignKey: 'fingerprintId' })
+  }
 
-  return ApiTracking;
-};
+  return ApiTracking
+}

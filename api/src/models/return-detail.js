@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = function (sequelize, DataTypes) {
   const ReturnDetail = sequelize.define('ReturnDetail', {
@@ -115,16 +115,16 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   ReturnDetail.associate = function (models) {
-    ReturnDetail.belongsTo(models.Return, { foreignKey: 'returnId' });
-    ReturnDetail.belongsTo(models.Product, { foreignKey: 'productId' });
-    ReturnDetail.belongsTo(models.Locale, { foreignKey: 'localeId' });
-    ReturnDetail.belongsTo(models.Price, { foreignKey: 'priceId' });
-    ReturnDetail.belongsTo(models.Tax, { foreignKey: 'taxId' });
-    ReturnDetail.belongsTo(models.PriceDiscount, { foreignKey: 'priceDiscountId' });
-  };
+    ReturnDetail.belongsTo(models.Return, { foreignKey: 'returnId' })
+    ReturnDetail.belongsTo(models.Product, { foreignKey: 'productId' })
+    ReturnDetail.belongsTo(models.Locale, { foreignKey: 'localeId' })
+    ReturnDetail.belongsTo(models.Price, { foreignKey: 'priceId' })
+    ReturnDetail.belongsTo(models.Tax, { foreignKey: 'taxId' })
+    ReturnDetail.belongsTo(models.PriceDiscount, { foreignKey: 'priceDiscountId' })
+  }
 
-  return ReturnDetail;
-};
+  return ReturnDetail
+}

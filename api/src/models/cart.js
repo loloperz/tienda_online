@@ -63,11 +63,11 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   Cart.associate = function (models) {
 
-  };
+  }
 
-  return Cart;
-};
+  return Cart
+}

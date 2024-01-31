@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = function (sequelize, DataTypes) {
   const Invoice = sequelize.define('Invoice', {
@@ -74,13 +74,13 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   Invoice.associate = function (models) {
-    Invoice.belongsTo(models.Customer, { foreignKey: 'customerId' });
-    Invoice.belongsTo(models.Sale, { foreignKey: 'saleId' });
-    Invoice.belongsTo(models.Return, { foreignKey: 'returnId' });
-  };
+    Invoice.belongsTo(models.Customer, { foreignKey: 'customerId' })
+    Invoice.belongsTo(models.Sale, { foreignKey: 'saleId' })
+    Invoice.belongsTo(models.Return, { foreignKey: 'returnId' })
+  }
 
-  return Invoice;
-};
+  return Invoice
+}

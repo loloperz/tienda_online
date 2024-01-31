@@ -40,11 +40,11 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   ProductCategory.associate = function (models) {
 
-  };
+  }
 
-  return ProductCategory;
-};
+  return ProductCategory
+}

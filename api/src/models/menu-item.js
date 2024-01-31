@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = function (sequelize, DataTypes) {
   const MenuItem = sequelize.define('MenuItem', {
@@ -86,13 +86,13 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   MenuItem.associate = function (models) {
-    MenuItem.belongsTo(models.Menu, { foreignKey: 'menuId' });
-    MenuItem.belongsTo(models.LocaleSeo, { foreignKey: 'localeSeoId' });
-    MenuItem.belongsTo(models.LocaleSeoSlug, { foreignKey: 'localeSeoSlugId' });
-  };
+    MenuItem.belongsTo(models.Menu, { foreignKey: 'menuId' })
+    MenuItem.belongsTo(models.LocaleSeo, { foreignKey: 'localeSeoId' })
+    MenuItem.belongsTo(models.LocaleSeoSlug, { foreignKey: 'localeSeoSlugId' })
+  }
 
-  return MenuItem;
-};
+  return MenuItem
+}

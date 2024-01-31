@@ -65,11 +65,11 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   Contact.associate = function (models) {
-    Contact.belongsTo(models.Fingerprint, { foreignKey: 'fingerprintId', as: 'fingerprint' });
-  };
+    Contact.belongsTo(models.Fingerprint, { foreignKey: 'fingerprintId', as: 'fingerprint' })
+  }
 
-  return Contact;
-};
+  return Contact
+}

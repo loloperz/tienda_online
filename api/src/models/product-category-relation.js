@@ -48,11 +48,11 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   ProductCategoryRelation.associate = function (models) {
 
-  };
+  }
 
-  return ProductCategoryRelation;
-};
+  return ProductCategoryRelation
+}

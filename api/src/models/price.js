@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = function (sequelize, DataTypes) {
   const Price = sequelize.define('Price', {
@@ -62,12 +62,12 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   Price.associate = function (models) {
-    Price.belongsTo(models.Product, { foreignKey: 'productId' });
-    Price.belongsTo(models.Tax, { foreignKey: 'taxId' });
-  };
+    Price.belongsTo(models.Product, { foreignKey: 'productId' })
+    Price.belongsTo(models.Tax, { foreignKey: 'taxId' })
+  }
 
-  return Price;
-};
+  return Price
+}

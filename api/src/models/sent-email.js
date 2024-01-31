@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = function (sequelize, DataTypes) {
   const SentEmail = sequelize.define('SentEmail', {
@@ -56,12 +56,12 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   SentEmail.associate = function (models) {
-    SentEmail.belongsTo(models.Customer, { foreignKey: 'customerId' });
-    SentEmail.belongsTo(models.Email, { foreignKey: 'emailId' });
-  };
+    SentEmail.belongsTo(models.Customer, { foreignKey: 'customerId' })
+    SentEmail.belongsTo(models.Email, { foreignKey: 'emailId' })
+  }
 
-  return SentEmail;
-};
+  return SentEmail
+}

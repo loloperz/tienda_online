@@ -50,11 +50,11 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   DialCode.associate = function (models) {
-    DialCode.belongsTo(models.Country, { foreignKey: 'countryId', as: 'country' });
-  };
+    DialCode.belongsTo(models.Country, { foreignKey: 'countryId', as: 'country' })
+  }
 
-  return DialCode;
-};
+  return DialCode
+}

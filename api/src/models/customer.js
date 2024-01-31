@@ -107,13 +107,13 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   Customer.associate = function (models) {
-    Customer.belongsTo(models.Country, { foreignKey: 'countryId', as: 'country' });
-    Customer.belongsTo(models.City, { foreignKey: 'cityId', as: 'city' });
-    Customer.belongsTo(models.DialCode, { foreignKey: 'dialCodeId', as: 'dialCode' });
-  };
+    Customer.belongsTo(models.Country, { foreignKey: 'countryId', as: 'country' })
+    Customer.belongsTo(models.City, { foreignKey: 'cityId', as: 'city' })
+    Customer.belongsTo(models.DialCode, { foreignKey: 'dialCodeId', as: 'dialCode' })
+  }
 
-  return Customer;
-};
+  return Customer
+}

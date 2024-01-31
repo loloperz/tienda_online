@@ -62,11 +62,11 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   Tax.associate = function (models) {
 
-  };
+  }
 
-  return Tax;
-};
+  return Tax
+}

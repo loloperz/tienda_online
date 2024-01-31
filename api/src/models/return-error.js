@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = function (sequelize, DataTypes) {
   const ReturnError = sequelize.define('ReturnError', {
@@ -74,13 +74,13 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   ReturnError.associate = function (models) {
-    ReturnError.belongsTo(models.Customer, { foreignKey: 'customerId' });
-    ReturnError.belongsTo(models.Return, { foreignKey: 'returnId' });
-    ReturnError.belongsTo(models.PaymentMethod, { foreignKey: 'paymentMethodId' });
-  };
+    ReturnError.belongsTo(models.Customer, { foreignKey: 'customerId' })
+    ReturnError.belongsTo(models.Return, { foreignKey: 'returnId' })
+    ReturnError.belongsTo(models.PaymentMethod, { foreignKey: 'paymentMethodId' })
+  }
 
-  return ReturnError;
-};
+  return ReturnError
+}

@@ -50,11 +50,11 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   City.associate = function (models) {
-    City.belongsTo(models.Country, { foreignKey: 'countryId', as: 'country' });
-  };
+    City.belongsTo(models.Country, { foreignKey: 'countryId', as: 'country' })
+  }
 
-  return City;
-};
+  return City
+}

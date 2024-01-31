@@ -40,11 +40,11 @@ module.exports = function (sequelize, DataTypes) {
         ]
       }
     ]
-  });
+  })
 
   SocialNetwork.associate = function (models) {
 
-  };
+  }
 
-  return SocialNetwork;
-};
+  return SocialNetwork
+}
